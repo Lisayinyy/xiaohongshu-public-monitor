@@ -23,10 +23,10 @@ metadata:
 
 ```bash
 # Via ClawHub
-clawdhub install xiaohongshu-monitor
+clawdhub install xiaohongshu-public-monitor
 
 # 手动安装
-git clone https://github.com/Lisayinyy/xiaohongshu-monitor.git ~/.openclaw/skills/xiaohongshu-monitor
+git clone https://github.com/Lisayinyy/xiaohongshu-public-monitor.git ~/.openclaw/skills/xiaohongshu-public-monitor
 
 # 安装依赖
 pip install playwright
@@ -161,7 +161,7 @@ python3 scripts/xhs_search.py batch "关键词1" "关键词2" --scroll 5
 ## 文件结构
 
 ```
-xiaohongshu-monitor/
+xiaohongshu-public-monitor/
 ├── SKILL.md              # 使用说明（本文件）
 ├── config.yaml           # 配置文件（用户修改这个）
 ├── scripts/
