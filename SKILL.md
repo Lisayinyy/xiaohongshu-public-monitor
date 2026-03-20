@@ -1,5 +1,5 @@
 ---
-name: xiaohongshu-monitor
+name: xiaohongshu-public-monitor
 description: "小红书舆论监控 - 自动搜索小红书帖子、筛选需要舆论引导的内容、生成多人设评论话术、输出到飞书多维表格。适用于任何品牌/产品的小红书舆情监控。Use when: (1) 需要监控小红书上的品牌/产品讨论, (2) 需要生成多角色评论话术, (3) 需要将监控结果输出到飞书表格, (4) 用户提到舆论监控、舆情分析、小红书评论。"
 metadata:
   author: Lisayinyy
