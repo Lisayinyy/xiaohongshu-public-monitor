@@ -1,0 +1,70 @@
+# 社媒舆论监控配置
+# 修改此文件适配你的品牌和需求
+
+# 品牌信息
+brand:
+  name: "你的品牌名"
+  products:
+    - "产品1"
+    - "产品2"
+
+# 搜索关键词（根据小红书热搜趋势每周调整）
+keywords:
+  - "品牌名"
+  - "行业词1 对比"
+  - "行业词2 测评"
+  - "行业词3 排名"
+
+# 搜索设置
+search:
+  time_filter: "一天内"
+  sort_by: "最多点赞"
+  scroll_times: 5          # 每个关键词翻页次数
+
+# 飞书多维表格
+feishu:
+  app_token: ""            # 多维表格 token
+  table_id: ""             # 数据表 ID
+
+# 评论人设（3个）
+personas:
+  - name: "🧑‍💻 技术专家"
+    traits: "10年+经验，懂技术架构"
+    style: "引用数据，理性权威，简洁"
+    purpose: "用数据定调"
+
+  - name: "🌱 普通用户"
+    traits: "普通用户，好学"
+    style: "口语化、短、用提问和体验分享"
+    purpose: "降低广告感，制造讨论"
+
+  - name: "📊 行业分析"
+    traits: "5-8年产品/行业经验"
+    style: "产品分析、竞争格局、商业逻辑"
+    purpose: "影响B端决策者"
+
+# 可引用数据（必须来自第三方公开平台，定期更新）
+reference_data:
+  - dimension: "智能指数"
+    source: "Artificial Analysis"
+    value: "50分（第一梯队）"
+  - dimension: "综合评估"
+    source: "GDPval-AA"
+    value: "Elo 1490"
+  # 按需添加更多数据...
+
+# 筛选规则
+filter:
+  # 不入表的内容类型
+  exclude:
+    - "纯招聘/面试"
+    - "纯八卦"
+    - "产品功能帖（非模型/Agent相关）"
+    - "互动<3且无对比内容"
+    - "评论区已有足够正面声音"
+
+# 竞品列表
+competitors:
+  - "竞品1"
+  - "竞品2"
+  - "竞品3"
