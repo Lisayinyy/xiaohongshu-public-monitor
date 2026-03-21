@@ -1,0 +1,7 @@
+# Playwright browser data (contains login sessions, do not commit)
+scripts/browser_data/
+__pycache__/
+*.pyc
+
+# User-specific config (template is config.yaml, example is config.example.yaml)
+# Users should copy config.example.yaml to config.yaml and fill in their own info

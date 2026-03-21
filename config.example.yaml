@@ -1,0 +1,85 @@
+# 小红书舆论监控 - MiniMax 配置
+
+brand:
+  name: "MiniMax"
+  products:
+    - "M2.7"
+    - "海螺AI"
+    - "Agent"
+
+keywords:
+  - "MiniMax"
+  - "大模型对比"
+  - "AI大模型测评"
+  - "国产大模型"
+
+search:
+  time_filter: "一天内"
+  sort_by: "最多点赞"
+  scroll_times: 5
+
+urgency:
+  distribution: [0.34, 0.33, 0.33]  # 高/中/低比例，多余的分给高
+  threat_weight: 0.6                 # 威胁度权重
+  spread_weight: 0.4                 # 传播力权重
+  watchlist: []                      # 重点关注的作者昵称（自动加权）
+
+feishu:
+  app_token: "DNHnbUykAaBGj4sH2eucAQzsn4d"
+  table_id: "tblTxuXwHmWX6wRU"
+
+competitors:
+  - "Kimi"
+  - "豆包"
+  - "智谱"
+  - "百川"
+  - "阶跃"
+  - "零一万物"
+  - "GPT"
+  - "DeepSeek"
+  - "Gemini"
+  - "Qwen"
+  - "Claude"
+  - "GLM"
+  - "百度"
+  - "MiMo"
+  - "小米"
+
+personas:
+  - name: "🧑‍💻 老技术专家"
+    traits: "20年经验，懂架构"
+    style: "引用AA/Code Arena数据，理性权威"
+    purpose: "用数据定调"
+
+  - name: "🌱 技术小白"
+    traits: "普通用户，好学"
+    style: "口语化、短、用提问和体验引发讨论"
+    purpose: "降低广告感"
+
+  - name: "📊 行业产品经理"
+    traits: "5-8年产品经验"
+    style: "产品分析、竞争格局、商业逻辑"
+    purpose: "影响B端决策者"
+
+reference_data:
+  - dimension: "智能指数"
+    source: "Artificial Analysis"
+    value: "50分（第一梯队）"
+  - dimension: "综合评估"
+    source: "GDPval-AA"
+    value: "Elo 1490"
+  - dimension: "代码能力"
+    source: "Code Arena"
+    value: "全球第9，Elo 1452"
+  - dimension: "推理成本"
+    source: "AA"
+    value: "$0.3/$1.2 每百万token"
+  - dimension: "成本指数"
+    source: "AA Cost Index"
+    value: "$176（竞品$500+）"
+  - dimension: "幻觉率"
+    source: "AA"
+    value: "34%（同级偏低）"
+  - dimension: "上下文"
+    source: "官方"
+    value: "100万 tokens"
